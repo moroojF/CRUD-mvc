@@ -32,6 +32,13 @@ ${book.numberOfPages} Page.
 </p>
 </div>
 </div>
+<a href="/books/edit/${book.id}" class="btn btn-dark mt-4 inline">Edit Book</a>
+<form action="/books/${book.id}" method="post">
+	<div class="form-group mt-4">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete" class="btn btn-dark inline">
+    </div>
+</form>
 </div>
 </body>
 </html>
